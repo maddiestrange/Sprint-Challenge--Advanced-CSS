@@ -1,1 +1,38 @@
 // Mixins Here
+.centercolumn() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .button(@width, @padding, @color, @justify, @radius, @text, @margin){
+    display: flex;
+    width: @width;
+    justify-content: @justify;
+    padding: @padding;
+    background-color: @color;
+    border-radius: @radius;
+    color: @text;
+    font-size: 1.7rem;
+    margin-right: @margin; 
+}
+
+.phoneimg{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}

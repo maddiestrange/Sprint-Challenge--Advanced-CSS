@@ -1,1 +1,20 @@
 // Navigation code here
+navbar{
+    .centercolumn();
+    margin: 20px;
+    margin-bottom: 10px;
+    nav{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        @media @phone{
+            width: 85%;
+        }
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: @header-font-color;
+    }
+}
